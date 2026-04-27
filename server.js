@@ -1,4 +1,8 @@
 const express = require("express");
+// Health check
+app.get("/", (req, res) => {
+  res.json({ status: "InstaFlow AI Backend is running! ✅" });
+});
 const cors = require("cors");
 const fetch = require("node-fetch");
 
